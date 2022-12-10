@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  dev:
+    image: eexit/mirror-http-server:latest
+    container_name: dummy-http
+    restart: unless-stopped
+    ports:
+      - 80:8080
